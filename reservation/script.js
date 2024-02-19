@@ -19,7 +19,7 @@ document.getElementById('reservationForm').addEventListener('submit', function (
     event.preventDefault();
     
     // Add your form submission logic here
-    
+    SubForm();
     // Redirect to Thank You page after successful submission
     window.location.href = 'thankyou.html';
 });
