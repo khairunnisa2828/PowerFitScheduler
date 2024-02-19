@@ -1,0 +1,104 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #96bceb;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Include padding and border in the box model */
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.terms-link {
+    cursor: pointer;
+    color: #000000;
+    text-decoration: underline;
+    font-size: 0.9em;
+}
+
+.terms-link:hover {
+    color: #cccccc;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+.submitButton {
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #1956a3;
+}
+
+.thank-you-container {
+    text-align: center;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.thank-you-message {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.back-to-booking-button {
+    padding: 10px 20px;
+    background-color: #1956a3;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.back-to-booking-button:hover {
+    background-color: #0d407b;
+}
